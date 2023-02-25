@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <meta charset="utf-8">
+        <title>Beadando1</title>
+        <script src="main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <ul>
+            <li id="win">Nyert(0)</li>
+            <li id="equal">Döntetlen(0)</li>
+            <li id="lose">Vesztett(0)</li>
+        </ul>
+
+        <div class="row">
+            <h1 id = "eredmeny"></h1> 
+
+            <div class="kepek">
+                <img onclick=kepek(ko) src="kavics.png" id="ko" width="240px" height="240px">
+                <img onclick=kepek(papir) src="wcpapir.png" id="papir" width="240px" height="240px">
+                <img onclick=kepek(ollo) src="metszo.png" id="ollo" width="240px" height="240px">
+            </div>
+            <br>
+
+            <p class="rk"> <img id="randomkep" src="200iq.png"> </p>
+
+            <p class="ujra">
+                <button onclick=reload() id="btn">Újra</button>
+            </p>
+        </div>
+    </body>
+    
+</html>
